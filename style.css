@@ -1,0 +1,139 @@
+ * {
+    font-family: "Figtree", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: white;
+    width: 400px;
+    border: 1px solid black;
+    margin: 40px;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    box-shadow: 5px 10px  hsl(0, 0%, 7%);
+}
+.image{
+    align-self: center;
+    margin-top: 1rem;
+}
+.image img {
+    width: 365px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.button{
+    margin-left: 1rem;
+    margin-top: 10px;
+    background-color: hsl(47, 88%, 63%);
+    text-align: center;
+    width: 100px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-weight: 800;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: hsl(0, 0%, 7%);
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container p {
+    margin-left: 1rem;
+    /* margin-bottom: 5px; */
+    font-weight: lighter;
+    padding: 5px;
+    font-size: 16px;
+    color: hsl(0, 0%, 42%);
+    line-height: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.published p {
+    color: hsl(0, 0%, 7%);
+}
+
+.container h1 {
+    margin-top: -10px;
+    margin-left: 1.2rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+h1:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+/* style profile */
+
+.profile {
+    display: flex;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profile .icon {
+    width: 50px;
+}
+
+.icon .avatar {
+    width: 100%;
+}
+
+.profile p{
+    color: hsl(0, 0%, 7%);
+    align-self: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+    .container {
+      width: 90%;
+    }
+    .image {
+        width: 330px;
+        text-align: center;
+    }
+    .image .img {
+        width : 300px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .container {
+      width: 90%;
+    }
+   
+    .image .img {
+        width : 200px;
+    } 
+}
+
+
+
